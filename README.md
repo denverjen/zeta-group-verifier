@@ -1,27 +1,20 @@
 # zeta-group-verifier
- A Group-Theoretic Approach to the Riemann Hypothesis: Encoding Zero Verification as a Word Problem
 
-# Zeta Group Verifier
+[![HAL](https://img.shields.io/badge/HAL-hal--05707491-blue)](https://hal.science/hal-05707491)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-green)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
-A pure algebraic approach to verify the Riemann Hypothesis using combinatorial group theory.
-We encode zero‑checking Turing machines into finitely presented groups and decide the word problem via abelianization (and deeper invariants).
+**An algebraic reduction of the Riemann Hypothesis to a word problem in a finitely presented group, with a Turing-machine compiler and abelianization verifier.**
 
-## 🧠 Core Idea
-- Design a Turing machine that halts iff a counterexample to RH is found.
-- Compile the machine into a group presentation and a distinguished word \(w\).
-- If \(w \neq 1\) in the group, the machine never halts → RH holds (for the checked zeros).
+---
 
-## ⚙️ Structure
-- `src/interval_arith.py` – Fixed‑point interval arithmetic with rigorous rounding.
-- `src/log_interval.py` – Natural logarithm via minimax polynomial + truncation error.
-- `src/cordic.py` – CORDIC sine/cosine with conservative interval output.
-- `src/sqrt_interval.py` – Newton square root with interval bounds.
-- `src/turing_machine.py` – A simple Turing machine simulator (states, symbols, transitions).
-- `src/compiler.py` – Converts a Turing machine into a group presentation and word.
-- `src/abelian_tester.py` – Decides whether \(w=1\) using abelianization (rank test).
-- `experiments/` – Reproduces all experiments from the paper (A, C2, E2, F, ...).
+## 🧠 What is this?
 
-## 🚀 Quick Start
-```bash
-pip install -r requirements.txt
-python experiments/experiment_F.py
+The Riemann Hypothesis (RH) asserts that all non-trivial zeros of the Riemann zeta function ζ(s) lie on the critical line Re(s) = 1/2.
+
+This project does **not** attempt to prove RH with traditional analytic number theory. Instead, it takes a completely different path:
+
+1. **Encode** the search for a counterexample to RH into a Turing machine.
+2. **Compile** that Turing machine into a finitely presented group `G` using the classical Boone–Novikov construction.
+3. **Reduce** the truth of RH to a single algebraic question:
+
