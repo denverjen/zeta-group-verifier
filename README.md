@@ -17,8 +17,6 @@ This project does **not** attempt to prove RH with traditional analytic number t
 2. **Compile** that Turing machine into a finitely presented group `G` using the classical Boone–Novikov construction.
 3. **Reduce** the truth of RH to a single algebraic question:
 
----
-
 ## What is this?
 
 The Riemann Hypothesis (RH) asserts that all non-trivial zeros of the Riemann zeta function ζ(s) lie on the critical line Re(s) = 1/2.
