@@ -27,12 +27,10 @@ This project **reduces** RH to a purely algebraic problem:
 2. Compile that Turing machine into a finitely presented group `G` using the Boone–Novikov construction.
 3. The truth of RH becomes a word problem:
 
-```
+
 RH is true  ⇔  the Turing machine never halts  ⇔  w ≠ 1 in G
 
 where `w` is a specific word in the group `G`. This reduction is **constructive**: `G` and `w` can be explicitly written down.
-
----
 
 ## Project Structure
 
@@ -49,7 +47,6 @@ where `w` is a specific word in the group `G`. This reduction is **constructive*
 | `tests/` | Unit tests for arithmetic modules |
 | `docs/` | Implementation blueprint and references |
 
----
 
 ## Quick Start
 
