@@ -7,8 +7,6 @@
 
 **An algebraic reduction of the Riemann Hypothesis to a word problem in a finitely presented group, with a Turing-machine compiler and abelianization verifier.**
 
----
-
 ## 🧠 What is this?
 
 The Riemann Hypothesis (RH) asserts that all non-trivial zeros of the Riemann zeta function ζ(s) lie on the critical line Re(s) = 1/2.
