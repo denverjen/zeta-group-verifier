@@ -64,6 +64,11 @@ pip install -r requirements.txt
 ### Run an experiment
 ```bash
 python experiments/experiment_C2.py
+
+or
+
+python experiments/experiment_C2.py -N 1000
+
 ```
 Expected output:
 ```
